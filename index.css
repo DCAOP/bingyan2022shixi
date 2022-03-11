@@ -1,0 +1,406 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1520px;
+    height: 360px;
+    background-color: #F7F7F7;
+    margin-top: 10px;
+}
+
+.nav-main {
+    flex: 1;
+    padding: 0 5px;
+    margin-top: 10px;
+    background-color: #fff;
+    max-width: 200px;
+    max-height: 360px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.nav-main-header {
+    color: #333333;
+    font-size: 14px;
+    height: 34px;
+    padding-top: 5px;
+}
+.nav-main-container {
+    color: #333333;
+    font-size: 14px;
+    height: 34px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.nav-main-a {
+    color: #333333;
+    font-size: 12px;
+}
+
+.picture {
+    flex: 4;
+    max-width: 776px;
+    position: relative;
+    max-height: 350px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.picture ul {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800%;
+}
+.picture ul li {
+    flex:1;
+}
+.arrow-l,
+.arrow-r {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-family: 'icomoon';
+    font-size: 18px;
+    z-index: 2;
+}
+
+.arrow-r {
+    right: 0;
+}
+
+.login-main {
+    flex: 1;
+    max-width: 190px;
+    position: relative;
+    max-height: 350px;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.login-main-header {
+    position: absolute;
+    top: 30px;
+    width: 160px;
+    font-size: 14px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.login-main .img {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%,0);
+} 
+
+.login-main-click {
+    position: absolute;
+    top: 235px;
+    width: 168px;
+    height: 32px;
+    border-radius: 30px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 32px;
+    color:#fff;
+    background-color: skyblue;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.login-main-footer {
+    position: absolute;
+    bottom: 10px;
+    width: 144px;
+    font-size: 12px;
+    color: #999999;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.content {
+    position: relative;
+    width: 1520px;
+    height: 7000px;
+    background-color: #F7F7F7;
+    padding: 0 160px;
+}
+.school {
+    position: absolute;
+    left: 170px;
+    top: 10px;
+    width: 200px;
+}
+
+.school-all {
+    font-size: 16px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background-color: #fff;
+}
+
+.school-enum {
+    position: absolute;
+    left: 200px;
+    top:0;
+    height: 60px;
+}
+
+.school-enum ul{
+    display: flex;
+    position: absolute;
+    top:50%;
+    transform: translate(0,-50%);
+    background-color: #fff;
+    width: 990px;
+}
+
+.school-enum ul li {
+    padding: 15px 0;
+    margin-right: 90px;
+    height: 60px;
+}
+
+.school-enum img{
+    max-width: 110px;
+    max-height: 30px;
+}
+
+.live {
+    position: absolute;
+    top: 100px;
+    font-size: 24px;
+    height: 36px;
+}
+
+.teacher {
+    position: absolute;
+    top: 150px;
+    max-height: 570px;
+    max-width: 1200px;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-wrap: wrap;
+}
+.teacher a {
+    position: relative;
+    width: 285px;
+    height: 126px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.teacher a .time {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.teacher a img {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 52px;
+    height: 52px;
+}
+
+.teacher a .title {
+    position: absolute;
+    top: 40px;
+    left: 65px;
+    font-size: 14px;
+}
+.teacher a .name {
+    position: absolute;
+    top: 65px;
+    left: 65px;
+}
+
+.recommend {
+    position: absolute;
+    top: 435px;
+    font-size: 24px;
+    height: 36px;
+    overflow: hidden;
+}
+
+.recommend-enum {
+    position: absolute;
+    top: 485px;
+    border-radius: 10px;
+    display: flex;
+    width: 1220px;
+    overflow: hidden;
+}
+
+.recommend-enum li {
+    flex: 1;
+    display: flex;
+}
+
+.recommend-enum-each {
+    width: 234px;
+    height: 320px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.recommend-enum-each img {
+    width: 234px;
+    height: 126px;
+    border-radius: 10px;
+}
+
+.recommend-enum-each .title {
+    font-size: 14px;
+    color: #333333;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.recommend-enum-each .university {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #666666;
+}
+.recommend-enum-each .num {
+    font-size: 12px;
+    color: #999999;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.recommend-enum-each .question {
+    font-size: 12px;
+    color: #999999;
+    background-color: #F8F9FB;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    max-width: 200px;
+    min-height: 50px;
+    border-radius: 10px;
+}
+
+.mooc-recommend {
+    display: flex;
+    position: absolute;
+    top: 850px;
+    width: 1200px;
+    overflow: hidden;
+}
+
+.mooc-recommend li {
+    flex: 1;
+    display: flex;
+}
+
+.mooc-recommend li img {
+    width: 390px;
+    height: 110px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.arrangement {
+    position: absolute;
+    top: 980px;
+    font-size: 24px;
+}
+
+.arrangement-classify {
+    position: absolute;
+    top: 1030px;
+    display: flex;
+}
+
+.arrangement-classify-enum {
+    flex: 1;
+    background-color: #fff;
+    height: 496px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+.arrangement-classify-enum-header {
+    position: relative;
+    width: 390px;
+    height: 68px;
+}
+.arrangement-classify-enum-header .theme {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #D1802B;
+}
+.arrangement-classify-enum-header .top50 {
+    position: absolute;
+    left: 98px;
+    top: 15px;
+    font-size: 14px;
+    color: #D1802B;
+}
+.arrangement-classify-enum-header .theme-en {
+    position: absolute;
+    left: 200px;
+    top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: oblique;
+    color: #E2E2E2;
+}
+.arrangement-classify-enum ul {
+    display: flex;
+    width: 390px;
+    overflow: hidden;
+}
+.arrangement-classify-enum ul li {
+    flex: 1;
+}
+.arrangement-classify-enum-each {
+    position: relative;
+    width: 390px;
+    height: 88px;
+    padding-bottom: 10px;
+}
+.arrangement-classify-enum-each .number {
+    margin: 0 5px 0 10px;
+    font-size: 20px;
+    color: #FA5055;
+}
+.arrangement-classify-enum-each img {
+    width: 112px;
+    height: 63px;
+}
+.arrangement-classify-enum-each .description  {
+    position: absolute;
+    left: 150px;
+    top: 0;
+}
+.arrangement-classify-enum-each .description .course {
+    color: #333333;
+    font-size: 14px;
+}
+.arrangement-classify-enum-each .description .collge {
+    color: #666666;
+    font-size: 12px;
+}
+.arrangement-classify-enum-each .description .persons {
+    position: absolute;
+    top: 40px;
+    color: #999999;
+    font-size: 12px;
+}
+
