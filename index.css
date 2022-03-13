@@ -5,7 +5,7 @@
     width: 1520px;
     height: 360px;
     background-color: #F7F7F7;
-    margin-top: 10px;
+    padding-top: 70px;
 }
 
 .nav-main {
@@ -140,7 +140,7 @@
 .content {
     position: relative;
     width: 1520px;
-    height: 1860px;
+    height: 1865px;
     background-color: #F7F7F7;
     padding: 0 160px;
 }
@@ -425,6 +425,7 @@
     display: flex;
     width: 1200px;
     height: 220px;
+    margin-bottom: 5px;
     overflow: hidden;
 }
 .evaluation-all li {
@@ -477,20 +478,23 @@
 
 
 
+
+
 .lessons {
     width: 1520px;
-    height: 1900px;
+    height: 5050px;
     background-color: #F7F7F7;
     padding: 0 160px;
 }
-.excellent {
+.headline {
     font-size: 24px;
     color: #333333;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .nav-items {
-    height: 40px;
+    position: relative;
+    height: 35px;
     width: 1200px;
     border-bottom: 1px solid #e7e7e7;
     margin-bottom: 20px;
@@ -502,6 +506,7 @@
     height: 35px;
     line-height: 35px;
     border-bottom: 2px solid #00cc7e;
+    margin-right: 15px;
 }
 .all {
     display: flex;
@@ -509,10 +514,12 @@
     flex-wrap: wrap;
 }
 .enum {
+    position: relative;
     width: 224px;
-    height: 280px;
+    height: 255px;
     margin-right: 20px;
-    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
 }
 .image {
     position: relative;
@@ -535,7 +542,6 @@
 .introduction {
     width: 224px;
     padding: 10px;
-    background-color: #fff;
 }
 .lesson-name {
     margin-bottom: 3px;
@@ -552,8 +558,10 @@
     margin-top: 4px;
 }
 .introduction-footer {
-    margin-top: 5px;
-    margin-bottom: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    height: 20px;
 }
 .introduction-footer .now-time {
     display: inline-block;
@@ -565,13 +573,306 @@
     height: 13px;
 }
 .introduction-footer .person {
+    margin-left: 45px;
     display: inline-block;
     font-size: 12px;
     color: #999999;
 }
 
-.computer{
-    margin-top: 30px;
+.off {
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    margin-right: 20px;
+}
+.cue {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    font-size: 12px;
+    color: #999999;
+}
+.cue a {
+    display: inline-block;
+    margin-left: 8px;
+    color: #666666;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, .04);
+    padding: 0 16px;
+}
+.computer .image {
+    background-image: url(../upload/computer1.webp) ;
+}
+.foreign .image {
+    background-image: url(../upload/foreign1.webp);
+}
+.engineering .image {
+    background-image: url(../upload/engineering1.webp);
+}
+.master .image {
+    background-image: url(../upload/master1.png);
+}
+.master .mark {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 12px;
+    background-color: #333333;
+}
+.master .person {
+    margin-left: 0;
+    display: inline-block;
+    font-size: 12px;
+    color: #999999;
+}
+.free {
+    display: inline-block;
+    padding-left: 95px;
+    font-size: 20px;
+    color: #00cc7e;
+    font-weight: 600;
+    height: 20px;
+    line-height: 20px;
+}
+.audio .image {
+    background-image: url(../upload/audio1.webp);
+}
+.audio .person {
+    margin-left: 0;
+    display: inline-block;
+    font-size: 12px;
+    color: #999999;
+}
+.motto{
+    font-size: 12px;
+    color: #666666;
+}
+.price {
+    display: inline-block;
+    padding-left: 95px;
+    font-size: 20px;
+    color: #ff7a3e;
+    font-weight: 600;
+    height: 20px;
+    line-height: 20px;
+}
+
+.mooc-series {
+    display: flex;
+    margin-top: 40px;
+    width: 1200px;
+    overflow: hidden;
+}
+.mooc-series li {
+    flex: 1;
+    display: flex;
+}
+
+.mooc-series li img {
+    width: 390px;
+    height: 110px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+.hot {
     font-size: 24px;
     color: #333333;
+    margin-top: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
 }
+.hot-all {
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
+    
+}
+.hot-all-enum {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(51,51,51);
+    width: 108px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    padding: 0 10px;
+    margin-top: 12px;
+    margin-right: 12px;
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+}
+.hot-all-enum span {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.story {
+    font-size: 24px;
+    color: #333333;
+    margin-top: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.story-all {
+    position: relative;
+    font-size: 14px;
+    background-color: rgba(75,107,148,1);
+    color: #fff;
+    width: 1200px;
+    height: 460px;
+}
+.story-all-change {
+    position: absolute;
+    top: 15px;
+    right: 12px;
+    width: 80px;
+    height:24px;
+    border-radius: 15px;
+    background-color: #FFFFFF77;
+}
+.story-all-change span {
+    margin-left: 7px;
+    height: 18px;
+    line-height: 18px;
+}
+
+.story-all-enum {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    display: flex;
+}
+
+.story-all-left {
+    width: 544px;
+}
+.story-all-left-e{
+    position: relative;
+    width: 544px;
+    margin-bottom: 20px;
+}
+.png {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 52px;
+    height: 52px;
+}
+.story-all-left-e-words{
+    display: inline-block;
+    width: 480px;
+    height: 170px;
+    margin-left: 60px;
+}
+
+.story-all-left-e-words-name {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.story-all-left-e-words-job {
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.story-all-left-e-words-word {
+    margin-top: 10px;
+    background-color: #FFFFFF33;
+    border-radius: 15px;
+    height: 135px;
+    padding: 12px;
+}
+
+.story-all-right {
+    display: flex;
+    width: 544px;
+    margin-left: 20px;
+}
+.story-all-right-e {
+    position: relative;
+    width: 544px;
+    margin-right: 25px;
+}
+.story-all-right-e-words-name {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-left: 60px;
+}
+.story-all-right-e-words-job {
+    font-size: 12px;
+    color: #FFFFFF;
+    margin-left: 60px;
+}
+.story-all-right-e-words-word {
+    margin-top: 20px;
+    background-color: #FFFFFF33;
+    border-radius: 15px;
+    padding: 12px;
+    height: 298px;
+}
+
+.video {
+    background-image: url(../upload/video.png);
+    width: 1200px;
+    height: 160px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.video-content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 160px;
+    background-color: #00000080;
+    border-radius: 10px;
+}
+.video-content img {
+    width: 36px;
+    height: 36px;
+}
+.video-content span {
+    font-size: 28px;
+    color: #FFFFFF;
+    width: 252px;
+    height: 40px;
+    margin-left: 12px;
+}
+
+.end {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    padding: 80px 0 100px 0;
+}
+.end-words {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 21px;
+}
+.end img {
+    width: 222px;
+    height: 62px;
+}
+.end .study {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: #00CC7E;
+    width: 320px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+
