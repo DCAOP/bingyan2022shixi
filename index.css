@@ -25,6 +25,9 @@
     height: 34px;
     padding-top: 5px;
 }
+.nav-main-header:hover {
+    background-color: rgb(185, 235, 183);
+}
 .nav-main-container {
     color: #333333;
     font-size: 14px;
@@ -33,9 +36,23 @@
     text-overflow: ellipsis;
     overflow: hidden;
 }
+.nav-main-container:hover {
+    background-color: rgb(185, 235, 183);
+}
 .nav-main-a {
-    color: #333333;
+    color: #999999;
     font-size: 12px;
+}
+.nav-main a:hover {
+    color: #00cc7e;
+    text-decoration: underline;
+}
+.nav-main-container span {
+    color: #999999;
+}
+.nav-main a:hover {
+    color: #00cc7e;
+    text-decoration: underline;
 }
 
 .picture {
@@ -47,6 +64,7 @@
     margin-top: 10px;
     margin-left: 10px;
     border-radius: 10px;
+    cursor: pointer;
 }
 .picture ul {
     display: flex;
@@ -55,8 +73,8 @@
     left: 0;
     width: 800%;
 }
-.picture ul li {
-    flex:1;
+.picture ul li img {
+    width: 776px;
 }
 .arrow-l,
 .arrow-r {
@@ -76,6 +94,26 @@
 
 .arrow-r {
     right: 0;
+}
+
+.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+.circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 0 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.current {
+    background-color: #fff;
 }
 
 .login-main {
@@ -99,14 +137,14 @@
 }
 .login-main .img {
     position: absolute;
-    top: 120px;
+    top: 100px;
     left: 50%;
     transform: translate(-50%,0);
 } 
 
 .login-main-click {
     position: absolute;
-    top: 235px;
+    top: 205px;
     width: 168px;
     height: 32px;
     border-radius: 30px;
@@ -158,7 +196,9 @@
     line-height: 60px;
     background-color: #fff;
 }
-
+.school-all a:hover{
+    color: #666666;
+}
 .school-enum {
     position: absolute;
     left: 200px;
@@ -211,11 +251,21 @@
     background-color: #fff;
     border-radius: 15px;
 }
+.teacher a:hover {
+    box-shadow: 5px 5px #d8d6d680;
+    transition: all .5s;
+}
 
 .teacher a .time {
     position: absolute;
     top: 10px;
     left: 15px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    width: 110px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
 }
 
 .teacher a img {
@@ -236,6 +286,7 @@
     position: absolute;
     top: 65px;
     left: 65px;
+    color: #999999;
 }
 
 .recommend {
@@ -243,7 +294,6 @@
     top: 435px;
     font-size: 24px;
     height: 36px;
-    overflow: hidden;
 }
 
 .recommend-enum {
@@ -262,10 +312,18 @@
 
 .recommend-enum-each {
     width: 226px;
-    height: 320px;
+    height: 293px;
     margin-right: 18px;
     border-radius: 10px;
     background-color: #fff;
+}
+.recommend-enum-each a {
+    display: block;
+    height: 288px;
+}
+.recommend-enum-each a:hover {
+    box-shadow: 5px 5px #d8d6d680;
+    transition: all .5s;
 }
 .recommend-enum-each img {
     width: 226px;
@@ -340,6 +398,14 @@
     height: 496px;
     margin-right: 15px;
     border-radius: 10px;
+}
+.arrangement-classify-enum-each a {
+    display: block;
+    width: 392px;
+    height: 64px;
+}
+.arrangement-classify-enum-each a:hover {
+    color: #666666;
 }
 .arrangement-classify-enum-header {
     position: relative;
@@ -442,6 +508,15 @@
     margin-right: 13px;
     margin-top: 15px;
 }
+.evaluation-enum a{
+    display: block;
+    width: 290px;
+    height: 195px;
+}
+.evaluation-enum a:hover {
+    box-shadow: 5px 5px #e4e2e2;
+    transition: all .5s;
+}
 .evaluation-enum img {
     position: absolute;
     left: 10px;
@@ -520,6 +595,11 @@
     margin-right: 20px;
     margin-bottom: 20px;
     background-color: #fff;
+    cursor: pointer;
+}
+.enum:hover {
+    box-shadow: 5px 5px #e4e2e2;
+    transition: all .5s;
 }
 .image {
     position: relative;
@@ -699,18 +779,23 @@
     height: 32px;
     line-height: 32px;
     text-align: center;
-    padding: 0 10px;
     margin-top: 12px;
     margin-right: 12px;
     background-color: rgba(0, 0, 0, 0.04);
     border-radius: 16px;
 }
-.hot-all-enum span {
+.hot-all-enum a {
     display: inline-block;
     width: 100%;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    cursor: pointer;
+}
+.hot-all-enum a:hover {
+    color: #00cc7e;
+    background-color: rgb(185, 235, 183);
+    border-radius: 16px;
 }
 
 .story {
@@ -727,6 +812,7 @@
     color: #fff;
     width: 1200px;
     height: 460px;
+    border-radius: 10px;
 }
 .story-all-change {
     position: absolute;
@@ -823,6 +909,12 @@
     margin-top: 10px;
     border-radius: 10px;
 }
+.video a {
+    display: block;
+    width: 1200px;
+    height: 160px;
+    border-radius: 10px;
+}
 .video-content {
     display: flex;
     flex-flow: row nowrap;
@@ -832,6 +924,10 @@
     height: 160px;
     background-color: #00000080;
     border-radius: 10px;
+}
+.video-content:hover {
+    background-color: #00000099;
+    transition: all .5s;
 }
 .video-content img {
     width: 36px;
@@ -862,6 +958,12 @@
     width: 222px;
     height: 62px;
 }
+.end a{
+    display: block;
+    width: 320px;
+    height: 48px;
+    border-radius: 32px;
+}
 .end .study {
     margin-top: 50px;
     font-size: 20px;
@@ -873,6 +975,7 @@
     line-height: 48px;
     border-radius: 32px;
     text-align: center;
+    cursor: pointer;
 }
 
 
