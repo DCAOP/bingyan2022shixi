@@ -31,6 +31,7 @@
     top: 10px;
     width: 260px;
     height: 32px;
+    cursor: pointer;
 }
 
 .logo  {
@@ -47,7 +48,51 @@
 }
 .nav {
     margin-right: 50px;
+    cursor: pointer;
 }
+.special {
+    display: inline-block;
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    left: -90px;
+    top: 35px;
+    width: 700px;
+    height: 360px;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 9999;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 5px;
+    box-shadow: -5px -5px rgba(233, 226, 226, 0.4);
+}
+.menu-title {
+    color: #999999;
+    margin-bottom: 15px;
+}
+.menu-headline {
+    margin-bottom: 10px;
+}
+.menu-enum {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-each {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #cec9c9;
+    text-align: center;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
 .search-box {
     position: absolute;
     top: 10px;
@@ -58,11 +103,32 @@
     border-radius: 30px;
 }
 .search {
-    position: absolute;
+    position: relative;
     top:0;
     left: 5px;
     width: 245px;
     height: 32px;
+}
+.search span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 60px;
+    height: 32px;
+    background-color:greenyellow ;
+    border-radius: 30px;
+}
+.search label {
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    color: #999999;
+    font-size: 14px;
+    height: 18px;
+    line-height: 20px;
+    text-align: center;
+
 }
 .login {
     position: absolute;
@@ -117,6 +183,9 @@ footer {
     margin-bottom: 5px;
     margin-right: 5px;
 }
+.about a:hover {
+    color:#00cc7e;
+}
 
 
 .attention {
@@ -164,9 +233,16 @@ footer {
     color: #999999;
 }
 
+.footer-link a:hover {
+    color: #00cc7e;
+}
+
 .addition {
     width: 1520px;
     height: 60px;
     text-align: center;
     margin-top: 10px;
+}
+.addition a:hover {
+    color:#00cc7e;
 }

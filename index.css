@@ -17,6 +17,7 @@
     max-height: 360px;
     overflow: hidden;
     border-radius: 10px;
+    z-index: 999;
 }
 
 .nav-main-header {
@@ -24,17 +25,22 @@
     font-size: 14px;
     height: 34px;
     padding-top: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
 }
 .nav-main-header:hover {
     background-color: rgb(185, 235, 183);
 }
 .nav-main-container {
     color: #333333;
+    background-color: #fff;
     font-size: 14px;
     height: 34px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    cursor: pointer;
+    padding-left: 10px;
 }
 .nav-main-container:hover {
     background-color: rgb(185, 235, 183);
@@ -155,6 +161,7 @@
     background-color: skyblue;
     left: 50%;
     transform: translate(-50%,0);
+    cursor: pointer;
 }
 .login-main-footer {
     position: absolute;
@@ -186,15 +193,23 @@
     position: absolute;
     left: 170px;
     top: 10px;
-    width: 200px;
+    width: 1200px;
+    height: 60px;
 }
 
 .school-all {
     font-size: 16px;
+    width: 200px;
     height: 60px;
     text-align: center;
     line-height: 60px;
     background-color: #fff;
+    border-radius: 15px;
+}
+.school-all a {
+    display: inline-block;
+    height: 60px;
+    width: 200px;
 }
 .school-all a:hover{
     color: #666666;
@@ -213,6 +228,7 @@
     transform: translate(0,-50%);
     background-color: #fff;
     width: 985px;
+    border-radius: 15px;
 }
 
 .school-enum ul li {
@@ -393,24 +409,16 @@
 }
 
 .arrangement-classify-enum {
-    flex: 1;
     background-color: #fff;
+    width: 392px;
     height: 496px;
     margin-right: 15px;
     border-radius: 10px;
 }
-.arrangement-classify-enum-each a {
-    display: block;
-    width: 392px;
-    height: 64px;
-}
-.arrangement-classify-enum-each a:hover {
-    color: #666666;
-}
 .arrangement-classify-enum-header {
     position: relative;
-    width: 390px;
-    height: 68px;
+    width: 392px;
+    height: 64px;
 }
 .arrangement-classify-enum-header .theme {
     position: absolute;
@@ -438,17 +446,22 @@
 }
 .arrangement-classify-enum ul {
     display: flex;
-    width: 390px;
+    width: 392px;
     overflow: hidden;
-}
-.arrangement-classify-enum ul li {
-    flex: 1;
 }
 .arrangement-classify-enum-each {
     position: relative;
-    width: 390px;
+    width: 392px;
     height: 88px;
     padding-bottom: 10px;
+}
+.arrangement-classify-enum-each a {
+    display: inline-block;
+    width: 392px;
+    height: 64px;
+}
+.arrangement-classify-enum-each a:hover {
+    color: #666666;
 }
 .arrangement-classify-enum-each .number {
     margin: 0 5px 0 10px;
